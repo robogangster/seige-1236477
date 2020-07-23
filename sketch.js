@@ -13,16 +13,17 @@ async function r(){
     var responseJson=await response.json()
 var hour=responseJson.datetime.slice(11,13)
 if(hour>=5 && hour<=16){
-    backgroundImg = loadImage("sprites/bg.png");
+    backgroundImg = loadImage("bg.png");
 
 }else{
-    backgroundImg=loadImage("sprites/bg2.jpg")
+    backgroundImg=loadImage("bg2.jpg")
 }
 }
 
 
 function preload() {
-    backgroundImg = loadImage("sprites/bg.png");
+   // backgroundImg = loadImage("bg.png");
+    r();
 }
 
 function setup(){
